@@ -1,0 +1,230 @@
+*{
+    margin:0;
+    padding:0;
+    text-decoration:none;
+    list-style-type:none;
+    font-family:Arial;
+}
+a:visited, a:active{
+    color:black;
+}
+main{
+    width:90%;
+    height:auto;
+    margin:50px 5%;
+}
+.advertising{
+    width:100%;
+    height:auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.nav{
+    width:100%;
+    margin-bottom:25px;
+}
+.baners{
+    width:100%;
+    margin-bottom:25px;
+    display:flex;
+    flex-direction: column;
+}
+.categories{
+    width:100%;
+    height:55px;
+    background-color:#00ccdd;
+    color:white;
+    border-radius:10px 10px 0 0;
+    text-align:center;
+    padding:5px 0;
+    display:flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+}
+.sandwich{
+    width:30px;
+    height:52px;
+    display:flex;
+    flex-direction: column;
+    justify-content:space-between;
+    margin-right:5px;
+}
+.line{
+    width:inherit;
+    height:2.5px;
+    background-color:white;
+}
+#goods{
+    display:none;
+}
+#goods:checked+.nav-goods{
+    display:block;
+}
+.nav-goods{
+    display:none;
+    width:100%;
+    height:430px;
+}
+.nav-goods li{
+    width:90%;
+    margin:15px 5%;
+    padding:5px;
+    border-bottom:1px solid #f2f2f2;
+}
+.nav-goods li:last-child{
+    border-bottom:1px solid white;
+}
+.bigbaner{
+    width:100%;
+    height:295px;
+    background-color:#5ebeb4;
+    margin-bottom:25px;
+    color:white;
+    padding:60px 10%;
+    box-sizing: border-box;
+}
+.banner-title{
+    font-size:20px;
+    margin-bottom:20px;
+}
+.banner-subtitle{
+    font-size:15px;
+    margin-bottom:25px;
+    font-weight:
+}
+.price{
+    font-size:40px;
+    font-weight:bold;
+    margin-bottom:25px;
+}
+.buy-now{
+    width:100px;
+    height:35px;
+    background-color:inherit;
+    border:1px solid white;
+    border-radius:25px;
+    color:white;
+}
+.buy{
+    width:100%;
+    height:50px;
+    margin:70px 0;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.buy form{
+    width:auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top:25px;
+}
+.number{
+    padding:6px 30px;
+    border:1px solid black;
+    border-right:0;
+}
+.buy-btn{
+    width:80px;
+    height:30px;
+    background-color:#52c246;
+    border:0;
+    color:white;
+}
+.carousel{
+    width:100%;
+    height:520px;
+}
+.carousel-title{
+    font-size:15px;
+}
+.line{
+    width:100%;
+    height:1px;
+    background-color: grey;
+    margin:20px 0;
+}
+.stuff{
+    width:100%;
+    height:auto;
+    overflow-x: hidden;
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.good{
+    width:265px;
+    height:auto;
+}
+.good img{
+    width:235px;
+    height:235px;
+}
+.good-title{
+    font-size:15px;
+}
+.good-price{
+    font-size:15px;
+    color:red;
+    font-weight:bold;
+}
+.old{
+    color:darkgray;
+    text-decoration: line-through;
+    margin-left:25px;
+    font-size:12px;
+}
+.good-small{
+    font-size:12px;
+    font-weight:bold;
+}
+.good-buy{
+    width:160px;
+    height:40px;
+    background-color:#00ccdd;
+    border:0;
+    color:white;
+    margin-left:130px;
+}
+@media(min-width:768px){
+    .advertising{
+        height:490px;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .nav{
+        width:23%;
+    }
+    .buy{
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .baners{
+        width:73%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .smallbaner{
+        width:45%;
+        height:150px;
+        background-color:#78bce6;
+        padding:50px 60px;
+    }
+}
+@media(min-width:992px){
+    main{
+        width:70%;
+        margin:50px 15%;
+    }
+}
+@media(min-width:1200px){
+    
+}
