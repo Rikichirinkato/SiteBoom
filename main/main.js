@@ -1,3 +1,40 @@
 window.onload=function(){
-    
+    function getI(a){
+        return document.getElementById(a);
+    }
+    var x=0;
+    getI('left').onmousedown=function(){
+        x=x-270;
+        console.log(x);
+        getI('board').style.marginLeft=x+'px';
+        if(x<-260){
+            getI('right').style.visibility="visible";
+        }
+        else{
+            getI('right').style.visibility="hidden";
+        }
+        if(x<-1070){
+            getI('left').style.visibility="hidden";
+        }
+        else{
+            getI('left').style.visibility="visible";
+        }
+    }
+    getI('right').onmousedown=function(){
+        x=x+270;
+        console.log(x);
+        getI('board').style.marginLeft=x+'px';
+        if(x<-260){
+            getI('right').style.visibility="visible";
+        }
+        else{
+            getI('right').style.visibility="hidden";
+        }
+        if(x<-1070){
+            getI('left').style.visibility="hidden";
+        }
+        else{
+            getI('left').style.visibility="visible";
+        }
+    }
 }

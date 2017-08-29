@@ -1,12 +1,18 @@
+@font-face{
+    font-family: 'Lato', sans-serif;
+}
 *{
     margin:0;
     padding:0;
     text-decoration:none;
     list-style-type:none;
-    font-family:Arial;
+    font-family: 'Lato';
 }
 a:visited, a:active{
     color:black;
+}
+p{
+    font-family: 'Lato';
 }
 main{
     width:90%;
@@ -44,8 +50,8 @@ main{
     align-items: center;
 }
 .sandwich{
-    width:30px;
-    height:52px;
+    width:15px;
+    height:15px;
     display:flex;
     flex-direction: column;
     justify-content:space-between;
@@ -138,21 +144,29 @@ main{
 }
 .carousel{
     width:100%;
-    height:520px;
+    height:410px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 .carousel-title{
     font-size:15px;
+    align-self: flex-start;
 }
-.line{
+.grey-line{
     width:100%;
     height:1px;
     background-color: grey;
-    margin:20px 0;
 }
 .stuff{
-    width:100%;
+    width:265px;
     height:auto;
     overflow-x: hidden;
+}
+#board{
+    width:1065px;
+    height:inherit;
     display:flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -161,6 +175,11 @@ main{
 .good{
     width:265px;
     height:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-right:35px;
 }
 .good img{
     width:235px;
@@ -179,10 +198,10 @@ main{
     text-decoration: line-through;
     margin-left:25px;
     font-size:12px;
+    font-weight:lighter;
 }
 .good-small{
     font-size:12px;
-    font-weight:bold;
 }
 .good-buy{
     width:160px;
@@ -190,7 +209,33 @@ main{
     background-color:#00ccdd;
     border:0;
     color:white;
-    margin-left:130px;
+    margin-left:25px;
+    font-size:15px;
+}
+.head-n-arrow{
+    width:100%;
+    height:auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.arrows{
+    width:35px;
+    height: inherit;
+    display: flex;
+    flex-direction: row;
+}
+#left{
+    width:16px;
+    height:13px;
+    background-image: url(../img/arrow-left.png);
+    visibility:visible;
+}
+#right{
+    width:16px;
+    height:13px;
+    background-image: url(../img/arrow-right.png);
+    visibility:hidden;
 }
 @media(min-width:768px){
     .advertising{
@@ -218,11 +263,20 @@ main{
         background-color:#78bce6;
         padding:50px 60px;
     }
+    .smallbaner:last-child{
+        background-color:#dd755c;
+    }
+    .stuff{
+        width:540px;
+    }
 }
 @media(min-width:992px){
     main{
         width:70%;
         margin:50px 15%;
+    }
+    .stuff{
+        width:100%;
     }
 }
 @media(min-width:1200px){
